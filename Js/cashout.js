@@ -9,7 +9,7 @@ document.getElementById("btn-cashOut").addEventListener("click", function (e) {
     // get the corrent Amaount
     const blance = document.getElementById("Balance").innerText;
 
-    // add addmoney mainBlance
+    // add addmoney mainBlanceN=
     const cashOutMoney = parseInt(blance);
     const correntAmount = parseInt(addMoney);
     const newBlance = cashOutMoney - correntAmount;
