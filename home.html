@@ -21,7 +21,7 @@
               <!-- Available Balance -->
               <div class="stats shadow">
                 <div class="stat">
-                  <div class="stat-value">89,400</div>
+                  <div class="stat-value" id="Balance">89400</div>
                   <div class="stat-desc text-center">Available Balance</div>
                 </div>
               </div>
@@ -34,7 +34,7 @@
               <div class="divider"></div>
 
               <!-- Add Money Form Start -->
-              <div class="card bg-base-100 shrink-0 shadow-2xl">
+              <div class="hidden card bg-base-100 shrink-0 shadow-2xl">
                 <form class="p-5">
                   <div class="form-control">
                     <label class="label">
@@ -42,7 +42,7 @@
                     </label>
                     <input
                       id="add-money"
-                      type="email"
+                      type="text"
                       placeholder="Enter Amaount"
                       class="input input-bordered"
                       required
@@ -66,11 +66,45 @@
                 </form>
               </div>
               <!-- Add Money Form End -->
+              <!-- Cash Out Money Form Start -->
+              <div class="card bg-base-100 shrink-0 shadow-2xl">
+                <form class="p-5">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amaount</span>
+                    </label>
+                    <input
+                      id="cashOut-money"
+                      type="text"
+                      placeholder="Enter Amaount"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label"> </label>
+                    <input
+                      id="pin-number"
+                      type="password"
+                      placeholder="Enter Pin"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control mt-2">
+                    <button id="btn-cashOut" class="btn btn-primary">
+                      Add Money
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <!-- Cash Out Money Form End -->
             </div>
           </div>
         </div>
       </div>
     </main>
     <script src="./Js/home.js"></script>
+    <script src="./Js/cashout.js"></script>
   </body>
 </html>
